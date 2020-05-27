@@ -1,3 +1,16 @@
+#######################################################################
+# Creation date: 2020-05-27
+# Author: Frank Reimer
+# 
+# Tested on Satellite version:
+# - 6.6
+#
+# Description:
+# ------------
+# To get a frequently report of installable Red Hat errata on a per 
+# host basis you can use this Python script. Download it to your 
+# Satellite server or any other host where Python 2.7 is installed.
+#######################################################################
 #!/usr/bin/env python
 from passlib.hash import sha256_crypt
 from cryptography.fernet import Fernet
