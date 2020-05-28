@@ -339,9 +339,9 @@ The script stores the generated report file in csv format under `errata_report-'
 
 To not store a plaintext user password in the Python script, even if the script is stored in /root home directory and has the access right 700, you should encrypt the user password you use to connect to the Satellite API within the Python script.
 
-Therefore the module sha256_crypt from passlib.hash as well as Fernet from cryptography.fernet are used to decrypt the users password.
+Therefore the module `sha256_crypt from passlib.hash` as well as `Fernet from cryptography.fernet` are used to decrypt the users password.
 
-To crypt the Satellite user password you can use the crypt.py script. Open it and store your Satellite user password in the variable "password". Then run the script. It will print out the used Fernet key and the encrypted password. 
+To crypt the Satellite user password you can use the `crypt.py` script. Open it and store your Satellite user password in the variable "password". Then run the script. It will print out the used Fernet key and the encrypted password. 
 
 Copy the key and the encrypted password and store these information in the host_errata_report.py script. The variables are 
 - crypted_password
