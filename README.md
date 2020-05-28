@@ -3,8 +3,9 @@
 To get a frequently report of installable Red Hat errata on a per host basis you can use this Python script. Download it to your Satellite server or any other host where Python 2.7 is installed.
 
 ### Table of Contents
-[Prerequisites](#Prerequisites)
-[Where to get the available API calls](#)
+- [Prerequisites](#Prerequisites)
+- [1. Where to get the available API calls](#1.%20Where%20to%20get%20the%20available%20API%20calls)
+
 
 ## Prerequisites
 Once you`ve cloned the Git repo open the Python script host_errata_report.py and fill in the following variables:
@@ -15,15 +16,15 @@ Once you`ve cloned the Git repo open the Python script host_errata_report.py and
 - crypted_password
 - key
 
-> You can get these values for the last two variables from the crypt.py script described in chapter 4).
+> You can get these values for the last two variables from the crypt.py script described in chapter 4.
 
-## Where to get the available API calls
+## 1.  Where to get the available API calls
 
 You can find all available API calls on your Satellite server:
 
 https://satellite.example.com/apidoc/v2.html
 
-## 2 Where to find the available JSON fields to query within the Python script?
+## 2. Where to find the available JSON fields to query within the Python script?
 
 To get an overview about all available JSON fields you can run an API call via Curl on the Satellite server to e. g. list all available errata for a given host:
 
