@@ -2,10 +2,12 @@
 
 To get a frequently report of installable Red Hat errata on a per host basis you can use this Python script. Download it to your Satellite server or any other host where Python 2.7 is installed.
 
-### Table of Contents
-- [Prerequisites](#Prerequisites)
-- [1. Where to get the available API calls](##1.%20Where%20to%20get%20the%20available%20API%20calls)
-
+#### Table of Contents
+- [Prerequisites](##Prerequisites)
+- [1. Where to get the available API calls](##1.-20Where-to-get-the-available-API-calls)
+- [2. Where to find the available JSON fields to query within the Python script?](##2.-Where-to-find-the-available-JSON-fields-to-query-within-the-Python-script?)
+- [3. Where can I find the generated csv report file?](##3.-Where-can-I-find-the-generated-csv-report-file?)
+- [4. Using encrypted Satellite user password in the Python script](##4.-Using-encrypted-Satellite-user-password-in-the-Python-script)
 
 
 ## Prerequisites
@@ -337,11 +339,11 @@ We are interested in the key:value
 
 which gives us a hint if installable errata for this host are available. So in the Python script we use `host['content_facet_attributes']['errata_counts']['total']` within the for-loop to access exactly this data.
 
-## 3 Where can I find the generated csv report file?
+## 3. Where can I find the generated csv report file?
 
 The script stores the generated report file in csv format under `errata_report-' + current_date + '.csv'`. You can simply format the data as “table” and filter each column as needed.
 
-## 4 Using encrypted Satellite user password in the Python script
+## 4. Using encrypted Satellite user password in the Python script
 
 To not store a plaintext user password in the Python script, even if the script is stored in /root home directory and has the access right 700, you should encrypt the user password you use to connect to the Satellite API within the Python script.
 
