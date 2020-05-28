@@ -28,8 +28,8 @@ curl -X GET -s -k -u <user>:<password> https://satellite.example.com/api/hosts/h
 ```
 
 This gives you the following list:
-''' json
-#{
+```
+{
     "error": null,
     "page": 1,
     "per_page": "5000",
@@ -261,7 +261,7 @@ curl -X GET -s -k -u user:password https://satellite.example.com/api/hosts/host0
 ```
 
 This gives you the following output:
-```json
+```
 {
     "all_parameters": [
         {
@@ -323,7 +323,7 @@ This gives you the following output:
 
 We are interested in the key:value 
 
-````
+```
 "content_facet_attributes"
 	→ "errata_counts"
 		→ "total"
