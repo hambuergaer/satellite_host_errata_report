@@ -4,7 +4,7 @@ To get a frequently report of installable Red Hat errata on a per host basis you
 
 ### Table of Contents
 [Prerequisites](#Prerequisites)
-[Where to get the available API calls?](#'Where to get the available API calls?)
+[`Where to get the available API calls?`](#Where to get the available API calls?)
 
 
 ## Prerequisites
