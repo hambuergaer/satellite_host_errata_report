@@ -4,10 +4,10 @@ To get a frequently report of installable Red Hat errata on a per host basis you
 
 ### Table of Contents
 [Prerequisites](#Prerequisites)
-[1) Where to get the available API calls?](#1) Where to get the available API calls?)
-[2) Where to find the available JSON fields to query within the Python script?](#2) Where to find the available JSON fields to query within the Python script?)
-[3) Where can I find the generated csv report file?](#3) Where can I find the generated csv report file?)
-[4) Using encrypted Satellite user password in the Python script](#4) Using encrypted Satellite user password in the Python script)
+[1 Where to get the available API calls?](#1 Where to get the available API calls?)
+[2 Where to find the available JSON fields to query within the Python script?](#2 Where to find the available JSON fields to query within the Python script?)
+[3 Where can I find the generated csv report file?](#3 Where can I find the generated csv report file?)
+[4 Using encrypted Satellite user password in the Python script](#4 Using encrypted Satellite user password in the Python script)
 
 
 ## Prerequisites
@@ -21,13 +21,13 @@ Once you`ve cloned the Git repo open the Python script host_errata_report.py and
 
 > You can get these values for the last two variables from the crypt.py script described in chapter 4).
 
-## 1) Where to get the available API calls?
+## Where to get the available API calls?
 
 You can find all available API calls on your Satellite server:
 
 https://satellite.example.com/apidoc/v2.html
 
-## 2) Where to find the available JSON fields to query within the Python script?
+## 2 Where to find the available JSON fields to query within the Python script?
 
 To get an overview about all available JSON fields you can run an API call via Curl on the Satellite server to e. g. list all available errata for a given host:
 
@@ -339,11 +339,11 @@ We are interested in the key:value
 
 which gives us a hint if installable errata for this host are available. So in the Python script we use `host['content_facet_attributes']['errata_counts']['total']` within the for-loop to access exactly this data.
 
-## 3) Where can I find the generated csv report file?
+## 3 Where can I find the generated csv report file?
 
 The script stores the generated report file in csv format under `errata_report-' + current_date + '.csv'`. You can simply format the data as “table” and filter each column as needed.
 
-## 4) Using encrypted Satellite user password in the Python script
+## 4 Using encrypted Satellite user password in the Python script
 
 To not store a plaintext user password in the Python script, even if the script is stored in /root home directory and has the access right 700, you should encrypt the user password you use to connect to the Satellite API within the Python script.
 
