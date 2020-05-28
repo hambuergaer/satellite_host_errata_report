@@ -5,7 +5,7 @@ To get a frequently report of installable Red Hat errata on a per host basis you
 #### Table of Contents
 - [Prerequisites](##Prerequisites)
 - [1. Where to get the available API calls](##1.-20Where-to-get-the-available-API-calls)
-- [2. Where to find the available JSON fields to query within the Python script?](##2.-Where-to-find-the-available-JSON-fields-to-query-within-the-Python-script?)
+- [2. Where to find the available JSON fields to query within the Python script?](#2-where-to-find-the-available-json-fields-to-query-within-the-python-script)
 - [3. Where can I find the generated csv report file?](##3.-Where-can-I-find-the-generated-csv-report-file?)
 - [4. Using encrypted Satellite user password in the Python script](##4.-Using-encrypted-Satellite-user-password-in-the-Python-script)
 
