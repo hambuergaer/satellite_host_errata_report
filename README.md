@@ -329,13 +329,11 @@ We are interested in the key:value
 		→ "total"
 ```
 
-which gives us a hint if installable errata for this host are available. So in the Python script we use host['content_facet_attributes']['errata_counts']['total'] within the for-loop to access exactly this data.
+which gives us a hint if installable errata for this host are available. So in the Python script we use `host['content_facet_attributes']['errata_counts']['total']` within the for-loop to access exactly this data.
 
 ## 3) Where can I find the generated csv report file?
 
-The script stores the generated report file in csv format under errata_report-' + current_date + '.csv'
-
-You can simply format the data as “table” and filter each column as needed:
+The script stores the generated report file in csv format under `errata_report-' + current_date + '.csv'`. You can simply format the data as “table” and filter each column as needed.
 
 ## 4) Using encrypted Satellite user password in the Python script
 
