@@ -2,8 +2,9 @@
 
 To get a frequently report of installable Red Hat errata on a per host basis you can use this Python script. Download it to your Satellite server or any other host where Python 2.7 is installed.
 
-##### Table of Contents
+### Table of Contents
 [Prerequisites](#Prerequisites)
+[Where to get the available API calls?](#'Where to get the available API calls?)
 
 
 ## Prerequisites
